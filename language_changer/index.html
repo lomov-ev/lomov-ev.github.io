@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Language Switcher</title>
+	<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="langWrap">
+			<a href="#" language='english' class="active">EN</a>
+			<a href="#" language='bulgarian'>БГ</a>
+		</div>
+
+		<div class="content">
+			<h2 class="title">Kebab</h2>
+			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi veritatis, dicta nesciunt repellat eius labore ea accusantium? Ex nemo vel dolorem cum neque. Corrupti laudantium repellendus maxime reiciendis, voluptate modi optio sed qui eaque rerum fugiat accusantium, quis sequi eum. Quisquam reiciendis earum voluptatibus, provident ex error debitis dolorem pariatur explicabo quae deserunt aut non sequi facere! Velit sunt incidunt accusantium saepe hic debitis totam, laudantium ab culpa optio dolores nam quo fugiat neque nostrum enim officia quam labore obcaecati?</p>
+		</div>
+	</div>
+	<script>
+		const langEl = document.querySelector('.langWrap');
+		const link = document.querySelectorAll('a');
+		const titleEl = document.querySelector('.title');
+		const descrEl = document.querySelector('.description');
+
+		function changeText(lang) {
+				titleEl.textContent = data[lang].title;
+				descrEl.textContent = data[lang].description;
+				localStorage.setItem("language", lang);
+		}
+
+		function changeIcons(event) {
+				langEl.querySelector('.active').classList.remove('active');
+				event.target.classList.add('active');
+		}
+
+		link.forEach(el => {
+			el.addEventListener('click', (event) => {
+				changeIcons(event);
+				const attr = el.getAttribute('language');
+				changeText(attr);
+			});
+		});
+		
+		var data = {
+			  "english": 
+			  {
+			    "title": "Kebab",
+			    "description": 
+				    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci eligendi repellat ad dolor veritatis itaque sequi minus iste, doloremque. Officiis non eaque atque excepturi repudiandae nulla eos eligendi magni molestiae eius distinctio, voluptas pariatur incidunt et culpa inventore aspernatur recusandae nihil asperiores, vitae, maiores laborum quasi perspiciatis natus dignissimos! Accusantium aliquam nostrum impedit dignissimos iste, iure inventore! Sapiente, labore earum ut dicta ducimus asperiores laudantium natus officiis, quisquam placeat aspernatur voluptatum aut voluptates tenetur quos magni fugit quia. Fugiat."
+			  },
+			  "bulgarian": 
+			  {
+			    "title": "Под игото",
+			    "description": 
+				    "Тая прохладна майска вечер чорбаджи Марко, гологлав, по халат, вечеряше с челядта си на двора.Господарската трапеза беше сложена, както по обикновение, под лозата, между бистрия и студен чучур на барата, който като лястовичка пееше, деня и нощя, и между високите бухлати чемшири, що се тъмнееха край зида, зиме и лете все зелени. Фенерът светеше, окачен на клончето на едно люлеково дръвче, което приятелски надвисваше миризливите си люлеки над главите на челядта. А тя беше многобройна."},
+			}
+					const currentLanguage = localStorage.getItem("language");
+
+					if (currentLanguage) {
+						el = document.querySelector(`[language=${currentLanguage}]`);
+						langEl.querySelector('.active').classList.remove('active');
+						el.classList.add('active');
+						changeText(currentLanguage);
+					}
+	</script>
+</body>
+</html>
