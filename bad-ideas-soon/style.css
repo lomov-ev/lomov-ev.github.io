@@ -40,7 +40,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: #1d1d1b;
+	background: #000;
 	font-family: Open-Sauce;
 	color: #fff;
 	flex-direction: column;
