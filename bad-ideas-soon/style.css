@@ -40,7 +40,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: #1d1d1b;
+	background: #000;
 	font-family: Open-Sauce;
 	color: #fff;
 	flex-direction: column;
@@ -58,12 +58,16 @@ body {
   height: 100%;
 }
 
+.contact {
+	margin: 0;
+}
+
 .fa-brands {
   font-size: 2rem;
   margin-right: 0.5rem;
   cursor: pointer;
   color: #eee;
-  animation: fadeIn 3s; 
+  animation: fadeIn 5s; 
 }
 
 .fa-brands:hover {
@@ -72,7 +76,7 @@ body {
 
 footer {
 	margin-top: 2rem;
-	animation: fadeIn 3s; 
+	animation: fadeIn 5s; 
 }
 
 a:hover {
@@ -95,6 +99,19 @@ a:hover {
 a:active {
 	color: #eee;
 	text-decoration: underline;
+}
+
+.call-container {
+	display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.tel {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @media screen and (max-width: 600px) {

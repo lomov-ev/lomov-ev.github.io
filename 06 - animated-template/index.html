@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <!-- Tailwind Library -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="text-gray-800 antialiased">
 
@@ -740,6 +741,10 @@
   <!-- End of Footer Section -->
 </body>
 <!-- Navigation Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
+<script>
+  AOS.init();
+</script>
 <script>
   function toggleNavbar(collapseID) {
     document.getElementById(collapseID).classList.toggle("hidden");
