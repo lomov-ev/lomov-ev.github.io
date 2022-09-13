@@ -100,5 +100,6 @@ a:active {
 @media screen and (max-width: 600px) {
   .fade-in-image {
     margin: 10px;
+    transform: translateY(-35%);
   }
 }
