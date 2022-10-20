@@ -1,5 +1,13 @@
+@import url('http://fonts.cdnfonts.com/css/raglika');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.raglika {
+  font-family: "Raglika", sans-serif;
+}
+
 html,
 body {
+  font-family: 'Montserrat', sans-serif;
   height: 100%;
   color: #fff;
   margin: 0;
