@@ -1,0 +1,45 @@
+.container-line {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20vh;
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}
+
+.line {
+    width: 100%;
+    height: 5vw;
+    border-bottom: 1px solid #54311c;
+}
+
+.left {
+    width: 20%;
+}
+
+.section-title {
+    align-items: center;
+    width:fit-content;
+    height:fit-content;
+    margin-right: 3vw;
+    margin-left: 2vw;
+}
+
+.line-title {
+    text-align: center;
+    font-size: 8vw;
+    margin: 0;
+    padding-right: 2vw;
+    position: relative;
+    color: #e1c190;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.line-sub {
+    text-align: right;
+    font-size: 2vw;
+    margin: 0;
+    color: #54311c;
+}

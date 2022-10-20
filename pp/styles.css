@@ -1,0 +1,50 @@
+html,
+body {
+  height: 100%;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  min-height: 100%;
+}
+
+#first {
+  background-color: #000;
+  background-image: url("images/title.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#second {
+    background: #54311c;
+    width:100%;
+    margin: 0;
+    text-align:center;
+}
+
+#first > div {
+  bottom:0;
+  margin:0;
+  font-size: 12vw;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  transform: translate(-50%, 38%);
+  left: 50%;
+  color: #e1c190;
+}
+
+.small {
+    font-size: 2vw;
+    text-align: center;
+    letter-spacing: 1vw;
+    color: #fff;
+}
+
+#title {
+    margin-bottom: 0;
+}
