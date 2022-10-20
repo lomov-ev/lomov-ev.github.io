@@ -123,7 +123,6 @@ section {
 /* Bottom right text */
 .bottom-right {
   width: 70%;
-  height: 25%;
   background: #fff;
   color: #000;
 }
@@ -131,7 +130,7 @@ section {
 .bottom-right::after {
   content: "";
   display: block;
-  padding-top: 5%;
+  padding-bottom: 3%;
 }
 
 .descriptor {    
@@ -170,6 +169,12 @@ section {
   border: none;
   padding: 5% 0;
   white-space: nowrap;
-  background: #fff;
+  background: rgba(0,0,0,0);
   outline: none;
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 600px) {
+.portfolio-button {
+  padding: 1.5vh 0;
 }
