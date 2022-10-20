@@ -1,8 +1,8 @@
 .container-line {
     display: flex;
     flex-direction: row;
-    margin-top: 20vh;
-}
+/*    margin-top: 20vh;
+*/}
 
 .reversed {
     flex-direction: row-reverse;
