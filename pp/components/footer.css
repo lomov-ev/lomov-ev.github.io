@@ -1,11 +1,11 @@
-html,
+/*html,
 body {
   height: 100%;
   color: #fff;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+}*/
 
 footer {
   display: flex;
@@ -42,7 +42,7 @@ footer {
   font-size: 3vh;
 }
 
-ul {
+footer ul {
   margin-top: 1.5vh;
   display: flex;
   flex-direction: column;
@@ -51,7 +51,7 @@ ul {
   padding: 0;
 }
 
-ul > li {
+footer li {
     padding: 6px 0;
 }
 

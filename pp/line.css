@@ -8,6 +8,14 @@
     flex-direction: row-reverse;
 }
 
+.reversed .section-title .line-title {
+    color: #54311C;
+}
+
+.reversed .section-title .line-sub {
+    color: #e1c190;
+}
+
 .line {
     width: 100%;
     height: 5vw;
