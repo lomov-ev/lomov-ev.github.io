@@ -83,3 +83,20 @@
    font-size: 3vw;
   }
 }
+
+@media screen and (max-width: 600px) {
+.btn {
+  font-size: 3vw;
+}
+
+.pricing .raglika {
+  font-size: 7vw;
+}
+
+.cards {
+  margin: 10% 3.5%;
+}
+
+.cards-wrapper {
+  margin: 5vh 0;
+}
