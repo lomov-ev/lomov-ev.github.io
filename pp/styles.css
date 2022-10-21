@@ -32,8 +32,56 @@ section {
 #second {
     background: #54311c;
     width:100%;
+    min-height: 0;
     margin: 0;
     text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 25% 0;
+}
+
+.photo-self {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.photo-self img {
+  width: 70%;
+  height: auto;
+  border-radius: 182px;
+}
+
+.info {
+  width: 45%;
+  margin: 0 10%;
+}
+
+.info-title {
+  color: #E1C190;
+  font-size: 4vw;
+}
+
+.info-main {
+  font-size: 1.7vw;
+  text-align: justify;
+}
+
+.bookme-button {
+  border: 1px solid #FFFFFF;
+  border-radius: 20.5px;
+  font-size: 1.2vw;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #fff;
+  margin-top: 8%;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 2% 5%;
+  white-space: nowrap;
+  background: rgba(0,0,0,0);
+  outline: none;
 }
 
 #fifth {
@@ -300,4 +348,20 @@ input {
   justify-content: center;
   align-items: flex-end;
   margin: 40% 0 0% 0;
+}
+
+/*.photo-self {
+  width: 20%;
+}
+
+.photo-self img {
+  width: 100%;
+}
+
+.info {
+  width: 100%;
+}*/
+
+.descriptor {    
+  font-size: 3vw;
 }
