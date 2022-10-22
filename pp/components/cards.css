@@ -7,7 +7,7 @@
 .cards-wrapper {
   width: 80%;
   font-size: 1vw;
-  margin: 10vh 0;
+  margin: 10vh 0 5vh 0;
 }
 
 .cards {
@@ -94,9 +94,9 @@
 }
 
 .cards {
-  margin: 10% 3.5%;
+  margin: 10% 0;
 }
 
 .cards-wrapper {
-  margin: 5vh 0;
+  margin: 5vh 0 2.5vh 0;
 }

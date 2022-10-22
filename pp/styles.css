@@ -144,7 +144,7 @@ section {
   display: flex;
   align-self: flex-end;
   align-items: flex-end;
-  width: auto;
+  width: -webkit-fill-available;
 }
 
 .horizontal img {
@@ -157,6 +157,28 @@ section {
   display: flex;
   justify-content: center;
   min-height: 0;
+}
+
+.fifth-add {
+  font-size: 1.5vw;
+  color: #54311C;
+  text-align: center;
+}
+
+.contact-me {
+  margin: 5% 0 10% 0;
+  font-size: 1.5vw;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #54311C;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0.5% 5%;
+  border: 1px solid #54311C;
+  border-radius: 20.5px;
+  white-space: nowrap;
+  background: rgba(0,0,0,0);
+  outline: none;
 }
 
 #sixth {
@@ -433,4 +455,13 @@ input {
 
 .descriptor {    
   font-size: 3vw;
+}
+
+.contact-me, .fifth-add {
+  font-size: 3vw;
+}
+
+.contact-me {
+  margin: 3vh 0 8vh 0;
+  padding: 3% 18%;
 }
