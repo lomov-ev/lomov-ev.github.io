@@ -29,6 +29,27 @@ section {
   background-position: center center;
 }
 
+.arrows {
+  background: rgba(0,0,0,0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.arrow {
+  border: none;
+  font-size: 3vw;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  background: rgba(0,0,0,0);
+  outline: none;
+}
+
 #second {
     background: #54311c;
     width:100%;
@@ -86,22 +107,22 @@ section {
 
 #fourth {
   min-height: 0;
-  display: flex;
+/*  display: flex;
   flex-direction: row;
-  width: 100%;
+*/  width: 100%;
   margin: 10% 0;
 }
 
 .vertical {
-  width: 33%;
-  transform: translateX(-5%);
-  display: flex;
+/*  width: 33%;
+*/  transform: translateX(-5%);
+/*  display: flex;
   justify-content: flex-start;
-}
+*/}
 
 .vertical img {
   width: 100%;
-  height: ;
+  height: 66.6%;
   border-radius: 182px;
   object-fit: cover;
   transform: translateX(-10%);
@@ -109,7 +130,7 @@ section {
   margin-bottom: 20%;
 }
 
-.fills {
+/*.fills {
   width: 67%;
   display: flex;
   justify-content: center;
@@ -117,12 +138,12 @@ section {
   flex-direction: column;
   font-size: 1.5vw;
   color: #54311C;
-}
+}*/
 
 .thought {
   font-size: 5vw;
-  width: 50vw;
-  color: #E1C190;
+/*  width: 50vw;
+*/  color: #E1C190;
   transform: translate(-70%, 50%);
 }
 
@@ -140,20 +161,38 @@ section {
   font-size: 1.5vw;
 }
 
-.horizontal {
+/*.horizontal {
   display: flex;
   align-self: flex-end;
   align-items: flex-end;
   object-fit: cover;
-  width: fill;
 }
-
+*/
 .horizontal img {
-  width: 100%;
-  height: 50%;
-  border-radius: 36px 0 0 36px;
+/*  max-width: 100%;
+*/  object-fit: cover;
+/*  height: 50%;
+*/  border-radius: 36px 0 0 36px;
 }
 
+/*.arrow-review {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  transform: translateY(775%);
+  color: #54311C;
+  border: none;
+  font-size: 3vw;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  background: rgba(0,0,0,0);
+  outline: none;
+
+}
+*/
 #fifth {
   display: flex;
   justify-content: center;
@@ -273,7 +312,7 @@ input {
   margin: 0 3%;
 }
 
-#first > div {
+.title-wrapper {
   bottom:0;
   margin:0;
   font-size: 12vw;

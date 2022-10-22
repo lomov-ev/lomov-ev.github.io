@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="nav.css">
 	<link rel="stylesheet" type="text/css" href="./components/footer.css">
 	<link rel="stylesheet" type="text/css" href="./components/cards.css">
+	<link rel="stylesheet" href="styles_add.css">
 </head>
 <body>
 	<nav id="nav">
@@ -21,7 +22,12 @@
     	</div>
     </nav>
 	<section id="first">
-	  <div>
+	<div class="arrows">
+    	<button class="arrow" id="arrow-back-left"><-</button>
+    	<button class="arrow" id="arrow-back-right">-></button>
+    </div>
+
+	  <div class="title-wrapper">
 	    <p id="title" class="raglika">Arina Miroshina</p>
 	    <p class="small">photography</p>
 	  </div>
@@ -90,18 +96,17 @@
 			<div class="line right"></div>
 		</div>
 	<section id="fourth">
+		<button class="arrow-review" id="arrow-review">-></button>
 		<div class="vertical">
-			<img src="images/vertical.jpg">
+			<img src="images/vertical.jpg" id="vertical">
 		</div>
-		<div class="fills">
 			<div class="thought raglika">"I'm just amazed by your professionalism!"</div>
 			<div class="whole-review">
 				<p class="author">Katie, old friend</p>
 				<div id="under"></div>
 				<p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus optio in ex numquam facere, quae reprehenderit, voluptatum repudiandae facilis eligendi nemo laborum obcaecati inventore unde ullam ad amet repellendus incidunt?</p>
 			</div>
-			<div class="horizontal"><img src="images/horizontal.jpg"></div>
-		</div>
+			<div class="horizontal"><img src="images/horizontal.jpg" id="horizontal"></div>
 	</section>
 
 
@@ -209,6 +214,7 @@
 			</div>
 		</div>
 		<div class="frights">all rights reserved &reg; 2022</div>
-	</footer>	
+	</footer>
+	<script src="script.js"></script>	
 </body>
 </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+		body {
+			font-size: 1.5vw;
+			max-height: 100vh;
+			max-width: 100vw;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			display: grid;
+			grid-template-columns: repeat(6, 16.6%);
+			grid-template-rows: repeat(5, 20%);		
+			grid-column-gap: 0px;
+			grid-row-gap: 0px;
+		}
+
+			.div1 { grid-area: 1 / 1 / 5 / 3; }
+			.div2 { grid-area: 2 / 4 / 4 / 6; }
+			.div3 { grid-area: 4 / 5 / 6 / 7; }
+			.div4 { grid-area: 2 / 2 / 3 / 4; }
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			div {
+			}
+</style>
+<body>
+	<div class="div1"><img src="images/vertical.jpg"></div>
+	<div class="div2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio reprehenderit eos architecto. Ab error voluptatibus itaque unde quod incidunt aliquam commodi id soluta, natus maxime magnam ducimus quasi adipisci quam.</div>
+	<div class="div3"><img src="images/show_1.jpg" alt=""></div>
+	<div class="div4"><h1>HOW ABOUT NO</h1></div>
+</body>
+</html>
