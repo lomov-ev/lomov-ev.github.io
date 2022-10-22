@@ -144,7 +144,8 @@ section {
   display: flex;
   align-self: flex-end;
   align-items: flex-end;
-  width: -webkit-fill-available;
+  object-fit: cover;
+  width: fill;
 }
 
 .horizontal img {
