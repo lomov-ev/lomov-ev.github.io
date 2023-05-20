@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .static-part {
+        color: red;
+        font-size: 6rem;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .letters-part {
+        color: black;
+        font-size: 1rem;
+    }
+    .word {
+        font-size: 6rem;
+    }
+    .invisible {
+        visibility: hidden;
+    }
+</style>
+<body>
+    <div class="static-part word">
+        ПЫЛАЙ
+    </div>
+    <div class="static-part letters-part">
+        <div class="above">
+        </div>
+        <div class="invisible word">
+            ПЫЛАЙ
+        </div>
+        <div class="below">
+        </div>
+    </div>
+</body>
+<script>
+    let above;
+    let below;
+    for (let i = 300; i < 330; i++) {
+        above += `&#x${i};`;
+    }
+    for (let i = 350; i < 370; i++) {
+        below += `&#x${i};`;
+    }
+    document.querySelector('.above').innerHTML = above;
+    document.querySelector('.below').innerHTML = below;
+</script>
+</html>
